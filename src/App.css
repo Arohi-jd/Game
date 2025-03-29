@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #000000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF; 
+}
+
+
+.container {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 95%;
+  border: 2px solid #00FFFF;width:700px
+}
+
+
+.score-box {
+  background: #000000;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #00FFFF;
+  display: inline-block;
+  display: flex; justify-content: center; align-items: center; margin-top: 30px;
+}
+
+.score-box span {
+  display: block;
+  font-size: 16px;
+  color: #00FFFF;
+  margin-bottom: 5px;
+ 
+}
+
+.score-box__score {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFD700;display: flex;
+  justify-content: center; align-items: center; 
+}
+
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #00FFFF; 
+}
+
+
+.choices {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+.btn {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 2px solid #FFD700;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.choice-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.choice-text {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+.paper {
+  background: #00FFFF;
+}
+
+.scissors {
+  background: #00FF00;
+}
+
+.rock {
+  background: #FFD700;
+}
+
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.player, .computer {
+  text-align: center;
+}
+
+.player h3, .computer h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #00FFFF;
+}
+
+.result {
+  text-align: center;
+}
+
+.result h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #00FF00;
+}
+
+
+.play-again {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #FFD700;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #00FFFF;
+}
+
+.play-again:hover {
+  background: #00FFFF;
+  transform: translateY(-3px);
+}
+
+
+.counter {
+  width: 110px;
+  height: 110px;
+  background: #000000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #00FFFF;
+  margin: 15px auto;
+  border: 3px solid #00FFFF;
+}
+
+.animate {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
